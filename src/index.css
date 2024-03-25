@@ -1,0 +1,22 @@
+/* Navbar Component */
+
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, #768b9c, #d5dcdc, white);
+}
+nav ul {
+  margin: 0;
+}
+nav ul .link {
+  text-decoration: none;
+  color: black;
+}
+nav ul .link:hover {
+  border-bottom: 1px solid black;
+}
+/* __________________________________________________________________________ */
+/* Home Component */
+
+.text1 {
+  width: 450px;
+}
