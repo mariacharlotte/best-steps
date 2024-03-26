@@ -10,8 +10,8 @@ const Navbar = () => {
           <Link className="link py-3 px-5" to={"/"}>
             Home
           </Link>
-          <Link className="link py-3 px-5" to={"/technology"}>
-            Technology
+          <Link className="link py-3 px-5" to={"/products"}>
+            Products
           </Link>
           <Link className="link py-3 px-5" to={"/aboutus"}>
             About Us

@@ -1,8 +1,8 @@
 /* Navbar Component */
 
 body {
-  height: 100vh;
-  background: linear-gradient(180deg, #768b9c, #d5dcdc, white);
+  /* height: 100vh; */
+  background: linear-gradient(180deg, #768b9c, #fcf2f1, #d5dcdc, white);
 }
 nav ul {
   margin: 0;
