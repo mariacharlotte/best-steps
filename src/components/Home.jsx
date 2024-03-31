@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import shoe1 from "../assets/shoe1.png";
+import React from "react";
+import shoe1 from "../assets/homeshoe.png";
 
 const Home = () => {
-  // const [shoes, setShoes] = useState([]);
-  // const [error, setError] = useState([]);
-
   return (
     <div className="mx-5">
       <p className="text1 text-secondary">
@@ -12,8 +9,6 @@ const Home = () => {
         work with you to create a unique pair of shoes tailored to your needs,
         preferences, and goals.
       </p>
-
-      {/* {error !== "" && error} */}
 
       <div className="d-flex gap-5 m-auto" style={{ width: "80%" }}>
         <div
