@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* Navbar Component */
 .bg {
   /* background: linear-gradient(180deg, #778c9f, #f5eaea); */
-  background: linear-gradient(180deg, #aab6c3, white);
+  /* background: linear-gradient(180deg, #aab6c3, white); */
   /* background-color: #aab6c3; */
-  font-family: "Orbitron", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 nav ul {
   margin: 0;
@@ -57,4 +57,10 @@ nav ul .link:hover {
   outline: none;
 
   border-image: linear-gradient(to left, #84a9d0, darkorchid) 1;
+}
+.btnShow {
+  display: inline !important;
+}
+.btnHide {
+  display: none;
 }

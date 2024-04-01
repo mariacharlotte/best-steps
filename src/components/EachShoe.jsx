@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/MyContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import { faHeart, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const EachShoe = ({ shoe }) => {
@@ -23,14 +22,9 @@ const EachShoe = ({ shoe }) => {
           alt="shoeImage"
           style={{ width: "100%" }}
         />
-      </div>
-      <p>{title}</p>
-      <div className="d-flex justify-content-between align-items-center mb-2">
-        <span>{price}</span>
-
         <button
           className={
-            "btn btn-outline-secondary " +
+            "heartBtn btn btn-outline-secondary position-absolute start-0 end-1 " +
             (favoriteId && "text-info text-opacity-50")
           }
           style={{ border: "none", background: "none" }}
@@ -38,6 +32,10 @@ const EachShoe = ({ shoe }) => {
         >
           <FontAwesomeIcon className="fs-4 p-2 rounded-pill" icon={faHeart} />
         </button>
+      </div>
+      <p>{title}</p>
+      <div className="d-flex justify-content-between align-items-center mb-2">
+        <span>{price}</span>
       </div>
 
       <div className="position-relative">

@@ -78,3 +78,22 @@ export const SHOES = [
     image: shoe11,
   },
 ];
+
+// const img = document.querySelectorAll(".shoeimg");
+// const heartBtn = document.querySelectorAll(".heartBtn");
+// var count = img.length;
+// console.log(heartBtn);
+
+// for (var i = 0; i < count; i++) {
+//   // console.log(img[i]);
+//   img[i].addEventListener(
+//     "click",
+//     () => {
+//       for (var i = 0; i < count; i++) {
+//         console.log(heartBtn[i]);
+//         heartBtn[i].classList.remove("btnHide");
+//       }
+//     },
+//     false
+//   );
+// }

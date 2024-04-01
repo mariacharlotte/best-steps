@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Admin from "./components/Admin";
 import MyContext from "./context/MyContext";
 import Cart from "./cart/Cart";
+import Favorite from "./favorite/Favorite";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
             <Route path="/admin" element={<Admin />} />
 
             <Route path="/cart" element={<Cart />} />
-            <Route path="/fav" element={<h1>Favourite Page</h1>} />
+            <Route path="/fav" element={<Favorite />} />
           </Routes>
           {/* Footer Component */}
         </Router>
