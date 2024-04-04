@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/MyContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const EachShoe = ({ shoe }) => {
   // Instead of writing shoe.id, shoe.image, we can shorten by putting them with spread operator
@@ -25,7 +26,7 @@ const EachShoe = ({ shoe }) => {
         <button
           className={
             "heartBtn btn btn-outline-secondary position-absolute start-0 end-1 " +
-            (favoriteId && "text-info text-opacity-50")
+            (favoriteId && "text-danger text-opacity-50")
           }
           style={{ border: "none", background: "none" }}
           onClick={() => toggleFavorite(id)}
@@ -33,37 +34,27 @@ const EachShoe = ({ shoe }) => {
           <FontAwesomeIcon className="fs-4 p-2 rounded-pill" icon={faHeart} />
         </button>
       </div>
-      <p>{title}</p>
+      <p>
+        <Link to={`/${id}`} className="text-decoration-none text-dark">
+          {title}
+        </Link>
+      </p>
       <div className="d-flex justify-content-between align-items-center mb-2">
         <span>{price}</span>
       </div>
 
-      <div className="position-relative">
-        <button className="addBtn text-start" onClick={() => addToCart(id)}>
-          Add To Cart
-        </button>
-
-        <div
-          style={{
-            position: "absolute",
-            left: "75%",
-            top: "25%",
-          }}
+      <div className="position-relative" style={{ width: "300px" }}>
+        <button
+          type="button"
+          className="whiteBtn"
+          onClick={() => addToCart(id)}
         >
-          <span className="position-relative">
-            <FontAwesomeIcon
-              icon={faShoppingCart}
-              className="fs-5 text-secondary p-2 rounded-pill"
-            />
-            <span
-              className="position-absolute start-100 translate-middle
-             badge"
-              style={{ background: "darkorchid", borderRadius: "50%" }}
-            >
-              {cartItem?.count}
-            </span>
+          <FontAwesomeIcon icon={faCartShopping} /> Add To Cart
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {cartItem?.count}
           </span>
-        </div>
+        </button>
+        <div className="btnBorder"></div>
       </div>
     </div>
   );

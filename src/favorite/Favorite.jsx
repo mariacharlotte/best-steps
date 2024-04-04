@@ -4,7 +4,7 @@ import FavoriteItem from "./FavoriteItem";
 import { SHOES } from "../shoelist";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Favorite = () => {
   const { favoriteIds, cartItems } = useContext(CartContext);
@@ -22,14 +22,13 @@ const Favorite = () => {
           <Link className="link " to={"/cart"}>
             <span className="">
               <FontAwesomeIcon
-                icon={faShoppingCart}
-                className="fs-4 text-secondary bg-warning p-2 rounded-pill"
+                icon={faCartShopping}
+                className="fs-4 text-white bg-dark p-2 rounded-pill"
               />
               {totalItemCount > 0 && (
                 <span
                   className="position-absolute translate-middle
-             badge"
-                  style={{ background: "darkorchid" }}
+             badge bg-danger"
                 >
                   {totalItemCount}
                 </span>
@@ -39,14 +38,13 @@ const Favorite = () => {
 
           <Link className="link" to={"/fav"}>
             <FontAwesomeIcon
-              className="fs-4 text-secondary bg-warning p-2 rounded-pill"
+              className=" fs-4 text-white bg-dark p-2 rounded-pill"
               icon={faHeart}
             />
             {favoriteIds.length > 0 && (
               <span
                 className="position-absolute translate-middle
-             badge"
-                style={{ background: "darkorchid" }}
+             badge bg-danger"
               >
                 {favoriteIds.length}
               </span>

@@ -11,7 +11,11 @@ import Admin from "./components/Admin";
 import MyContext from "./context/MyContext";
 import Cart from "./cart/Cart";
 import Favorite from "./favorite/Favorite";
+<<<<<<< HEAD
 import Footer from "./components/Footer";
+=======
+import { ProductDetail } from "./components/ShoeDetail";
+>>>>>>> ff026f9 (Refined Home component)
 
 function App() {
   return (
@@ -22,11 +26,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/:id" element={<ProductDetail />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-
             <Route path="/admin" element={<Admin />} />
-
             <Route path="/cart" element={<Cart />} />
             <Route path="/fav" element={<Favorite />} />
           </Routes>

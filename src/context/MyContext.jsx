@@ -30,6 +30,28 @@ const MyContext = (props) => {
     }
   };
 
+  // remove from cart function
+  const removeFromCart = (id) => {
+    const item = cartItems.find((item) => item.id === id);
+    if (item) {
+      let updatedCart;
+      if (item.count === 1) {
+        updatedCart = cartItems.filter((item) => item.id !== id);
+      } else {
+        updatedCart = cartItems.map((eachItem) => {
+          if (eachItem.id === id) {
+            return {
+              ...eachItem,
+              count: eachItem.count - 1,
+            };
+          }
+          return eachItem;
+        });
+      }
+      setCartItems(updatedCart);
+    }
+  };
+
   // favorite shoe function
   const toggleFavorite = (id) => {
     const favoriteId = favoriteIds.find((fid) => fid === id);
@@ -79,6 +101,7 @@ const MyContext = (props) => {
   const contextValue = {
     cartItems,
     addToCart,
+    removeFromCart,
     toggleFavorite,
     favoriteIds,
     getTotalAmount,
