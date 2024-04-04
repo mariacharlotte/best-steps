@@ -11,6 +11,7 @@ import Admin from "./components/Admin";
 import MyContext from "./context/MyContext";
 import Cart from "./cart/Cart";
 import Favorite from "./favorite/Favorite";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/fav" element={<Favorite />} />
           </Routes>
           {/* Footer Component */}
+          <Footer/>
         </Router>
       </MyContext>
     </div>
