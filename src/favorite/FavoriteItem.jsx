@@ -33,7 +33,7 @@ const FavoriteItem = (props) => {
           <button
             type="button"
             className={
-              "btn btn-outline-dark position-relative " +
+              "btn btn-outline-none position-relative fs-2 " +
               (favoriteId && "text-danger")
             }
             onClick={() => toggleFavorite(id)}

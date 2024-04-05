@@ -1,83 +1,151 @@
 import React from "react";
-import shoe5 from "../assets/shoe5.png";
+import covershoe from "../assets/covershoe2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 
 const Contact = () => {
   return (
-    <div className="Hero">
-      <div className="row d-flex align-items-center">
-        <div className="col-md-8  col-lg-7 ">
-          <div className="intro ">
-            <h2 className="d-flex justify-content-center">
-              Create Your Dream Shoes
-            </h2>
+    <div className="my-5 d-md-flex flex-md-column md-align-items-center">
+      <div
+        className="m-auto d-lg-flex 
+       justify-content-between"
+        style={{ width: "90%" }}
+      >
+        <div className="contactdiv1">
+          <div
+            style={{ width: "400px", marginBottom: "40px", textAlign: "start" }}
+          >
+            <h1 style={{ fontSize: "50px" }}>Create Your Dream Shoes</h1>
             <p>
               If you're interested in ordering a custom-made pair of running
               shoes, please fill out the form below. Our team of expert
               designers will work with you to create your dream shoes
             </p>
           </div>
-          <div className="contantInfo d-flex justify-content-center">
-            <form className="row g-3" style={{width:"500px"}}>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">First name</label>
-                <input type="text" className="form-control " required />
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">Last name</label>
-                <input type="text" className="form-control " required />
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">Username</label>
-                <div className="input-group">
-                  <input type="text" className="form-control" required />
-                </div>
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">City</label>
-                <input type="text" className="form-control " required />
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">State</label>
-                <input type="text" className="form-control" required />
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">Zip</label>
-                <input type="text" className="form-control" required />
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">Shoe type</label>
+          <div className="">
+            <h3>Contact Form:</h3>
+            <form className="row g-3" style={{ width: "500px" }}>
+              <div className="row my-3">
+                <label className="mb-2" htmlFor="name">
+                  01. Name
+                </label>
                 <input
+                  id="name"
                   type="text"
-                  className="form-control"
-                  placeholder="Running,climbing"
-                  required
-                />
-              </div>
-              <div className="col-md-8 col-lg-6">
-                <label className="form-label">Message</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Type Message"
-                  required
+                  style={{
+                    outline: "none",
+                    border: "none",
+                    borderBottom: "1px solid black",
+                    paddingBottom: "5px",
+                  }}
+                  placeholder="Enter Name Here"
                 />
               </div>
 
-              <button className="btn btn-primary col-md-5" type="submit">
-                Submit form
+              <div className="row my-3">
+                <label className="mb-2" htmlFor="email">
+                  02. Email Address
+                </label>
+                <input
+                  id="email"
+                  type="text"
+                  style={{
+                    outline: "none",
+                    border: "none",
+                    borderBottom: "1px solid black",
+                    paddingBottom: "5px",
+                  }}
+                  placeholder="Enter Email Here"
+                />
+              </div>
+
+              <div className="row my-3">
+                <label className="mb-2" htmlFor="ph">
+                  03. Phone number
+                </label>
+                <input
+                  id="ph"
+                  type="text"
+                  style={{
+                    outline: "none",
+                    border: "none",
+                    borderBottom: "1px solid black",
+                    paddingBottom: "5px",
+                  }}
+                  placeholder="Enter Name Here"
+                />
+              </div>
+
+              <div className="row my-3">
+                <label className="mb-2" htmlFor="stype">
+                  04. Shoe Type
+                </label>
+                <input
+                  id="stype"
+                  type="text"
+                  style={{
+                    outline: "none",
+                    border: "none",
+                    borderBottom: "1px solid black",
+                    paddingBottom: "5px",
+                  }}
+                  placeholder="Enter Name Here"
+                />
+              </div>
+
+              <div className="row my-3">
+                <label className="mb-2" htmlFor="msg">
+                  Message
+                </label>
+
+                <textarea
+                  name=""
+                  id="msg"
+                  rows="2"
+                  placeholder="Type message"
+                  className="rounded border-dark"
+                  style={{ outline: "none" }}
+                ></textarea>
+              </div>
+
+              <button
+                className="w-50 py-2 submit"
+                style={{ transition: "all 0.2s" }}
+              >
+                SUBMIT
               </button>
             </form>
           </div>
         </div>
-        <div className="col-lg-4 col-md-8 ">
-        <img src={shoe5} alt="imageError" style={{ width: "500px" }} />
 
-          <p >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            voluptatum autem ratione? Incidunt debitis velit illo deserunt iste
-            suscipit dolore deleniti excepturi adipisci facilis, aspernatur
-            pariatur illum omnis officia ut.
-          </p>
+        <div className="contactdiv1 mt-4">
+          <img src={covershoe} width={"400px"} alt="imageError" />
+
+          <div style={{ width: "400px" }}>
+            <p className="my-4 text-secondary">
+              At Xenon, we value your feedback and are here to help you with any
+              questions or concerns you may have. You can reach us through the
+              following methods:
+            </p>
+            <div className="my-2 fw-bold">
+              <FontAwesomeIcon className="me-2" icon={faPhone} />
+              <span>555-555-5555</span>
+            </div>
+            <div className="my-2 fw-bold">
+              <FontAwesomeIcon className="me-2" icon={faEnvelope} />
+              <span>inquiry@beststeps.com</span>
+            </div>
+            <div className="my-2 fw-bold">
+              <FontAwesomeIcon className="me-2" icon={faUser} />
+              <span>chat bot</span>
+            </div>
+            <p className="my-4 text-secondary">
+              If you have any questions or concerns, please don't hesitate to
+              reach out to us. We'll be happy to assist you in any way we can
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -15,10 +15,11 @@ const Home = () => {
   //   title.classNameList.add("changecolor");
   // });
   return (
-    <div className="mb-5">
+    <div>
+      {/* First div */}
       <div className="coverImg">
         <div
-          className="p-5 d-flex flex-column justify-content-around "
+          className="covertxt p-5 d-flex flex-column justify-content-around"
           style={{ width: "30%" }}
         >
           <div
@@ -42,7 +43,7 @@ const Home = () => {
 
           <div className="flex flex-column justify-content-between position-relative p-2">
             <div
-              className="position-relative"
+              className="position-relative whiteBtndiv"
               style={{ width: "352px", height: "56px" }}
             >
               <button
@@ -57,18 +58,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <video
-            id="HeroVideo"
-            style={{ width: "50%", height: "100%" }}
-            loop=""
-            src="https://static.nike.com/a/videos/q_90/476d28cd-731a-41fc-9bb5-0d2877aae7bd/video.mp4"
-            autoplay=""
-            class="css-ac32pf"
-          ></video> */}
-
       <p className="mt-4 text-center fs-1 fw-bold">Trending Now</p>
 
-      <div className="d-flex gap-5 m-auto" style={{ width: "80%" }}>
+      {/* Three cards */}
+      <div className="threeCards d-flex gap-5 m-auto" style={{ width: "80%" }}>
         <div
           className=" p-3 rounded border border-secondary text-center"
           style={{ height: "370px", width: "calc(100% / 3)" }}
@@ -133,6 +126,7 @@ const Home = () => {
         </button>
       </div>
 
+      {/* Some texts */}
       <p className="p-5 fs-4 w-75 m-auto text-secondary text-center">
         With custom-designed running shoes from Best Steps. Our expert designers
         will work with you to create a unique pair of shoes tailored to your
@@ -144,7 +138,7 @@ const Home = () => {
       </p>
 
       <div
-        className="mx-4 d-grid ms-auto me-auto"
+        className="cols4 m-5 d-grid ms-auto me-auto"
         style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr", width: "80%" }}
       >
         <div>

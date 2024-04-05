@@ -8,20 +8,31 @@
   /* background-color: #aab6c3; */
   font-family: "Roboto", sans-serif;
 }
-nav ul {
+nav ul,
+.togglelinks ul {
   margin: 0;
   font-weight: 600;
   font-size: 17px;
   line-height: 23px;
   color: #353535;
 }
-nav ul .link {
+nav ul .link,
+.togglelinks ul .link {
   text-decoration: none;
   color: black;
+  transition: all 0.2s ease;
 }
-nav ul .link:hover {
-  border-bottom: 1px solid black;
+nav ul .link:hover,
+.togglelinks ul .link:hover {
+  color: white;
+  background-color: black;
 }
+.barIcon,
+.xmark,
+.togglelinks {
+  display: none;
+}
+
 /* __________________________________________________________________________ */
 /* Home Component */
 .hole {
@@ -62,6 +73,7 @@ nav ul .link:hover {
   background-color: black;
   color: white;
 }
+
 .whiteBtn {
   width: 100%;
   height: 100%;
@@ -76,7 +88,7 @@ nav ul .link:hover {
 
   transform: translate(-5px, -5px);
   transition: all 0.5s ease;
-  z-index: 10;
+  z-index: 1;
 }
 .whiteBtn:hover {
   transform: translate(0);
@@ -95,17 +107,295 @@ nav ul .link:hover {
 .coverImg {
   height: 100vh;
   background-size: cover;
+  background-position: center;
+  object-fit: contain;
   display: flex;
   justify-content: start;
   align-items: center;
-  background-position: end;
   background-image: url("../src/assets/cover.jpg");
 }
 .shopAll {
   padding: 15px 200px;
   transition: all 0.3s ease;
 }
-.shopAll:hover {
+.shopAll:hover,
+.submit:hover {
   border: 5px solid black;
-  box-shadow: inset;
+}
+
+/* About Us */
+
+.container .div6 {
+  margin: 200px auto 0;
+}
+
+.div6 .first,
+.div6 .second {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 170px;
+  gap: 152px;
+}
+
+.div6 img {
+  /* width: 500px; */
+  height: 500px;
+  border-radius: 12px;
+}
+
+.div6 .text {
+  width: 29%;
+}
+
+.div6 h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.div6 h1:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.div6 a {
+  color: green;
+  text-decoration: none;
+}
+
+.div6 .first .img2 {
+  background-image: url("./img/graphic-robust.avif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+/* Div 7 */
+
+.container .div7 {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div7 h1 {
+  color: var(--darkgreen);
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.div7 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 53px;
+  margin-bottom: 180px;
+}
+
+.div7 .cards > * {
+  width: 250px;
+  height: 300px;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div7 img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.div7 p {
+  width: calc(100% - 61px);
+}
+
+/* Footer Component */
+
+.footerlinks:hover {
+  color: grey !important;
+}
+@media screen and (max-width: 1400px) {
+  /* Products */
+  .shoecards {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    margin-bottom: 20px !important;
+  }
+  /* Shoe Detail */
+  .detail1 {
+    flex: 0 0 auto !important;
+    width: 50% !important;
+  }
+
+  .description {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* Home */
+
+  .covertxt {
+    width: 50% !important;
+  }
+  .threeCards {
+    flex-direction: column;
+    width: 100% !important;
+    align-items: center;
+  }
+  .threeCards > * {
+    width: 90% !important;
+  }
+
+  /* Products */
+  .shoecards {
+    grid-template-columns: 1fr 1fr !important;
+    grid-auto-rows: auto !important;
+  }
+
+  /* Shoe Detail */
+  .sizes {
+    width: auto !important;
+  }
+  .relatedShoes {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  /* About Us */
+  .div6 .first,
+  .div6 .second {
+    text-align: center;
+    font-size: small;
+    gap: 10px;
+  }
+
+  .div6 h1 {
+    font-size: 30px;
+  }
+
+  .div6 img {
+    width: 300px;
+    height: 300px;
+  }
+  .div7 .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  /* Home */
+  .cols4 {
+    padding: 20px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px;
+  }
+
+  .sizes {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .contactdiv1 > *,
+  .contactdiv1 form {
+    margin: auto;
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navUl {
+    display: none !important;
+  }
+  .barIcon {
+    display: block;
+  }
+  .div6 .first,
+  .div6 .second {
+    width: auto;
+  }
+  /* Cart */
+  .shoeincart {
+    width: auto !important;
+    height: auto !important;
+  }
+  .summarydiv {
+    width: auto !important;
+  }
+}
+@media screen and (max-width: 790px) {
+  /* Home */
+
+  .covertxt {
+    width: 100% !important;
+  }
+  .whiteBtndiv {
+    width: auto !important;
+  }
+
+  /* Products */
+  .shoecards {
+    grid-template-columns: 1fr !important;
+  }
+  /* Shoe Detail */
+  .detail1 {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+  .relatedShoes {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Contact */
+
+  .contactdiv1 h1 {
+    font-size: 30px !important;
+  }
+  .footer2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer1 > * {
+    width: 90% !important;
+    margin: auto;
+  }
+  .footer1 .inputbox {
+    height: auto !important;
+  }
+  .footer h1 {
+    text-align: center;
+  }
+  .div6 .first,
+  .div6 .second {
+    width: 95%;
+    flex-direction: column;
+  }
+  .div7 {
+    width: 95%;
+  }
+  .div7 .cards {
+    grid-template-columns: 1fr;
+  }
+  .div7 .cards > * {
+    width: auto;
+  }
+}
+@media screen and (max-width: 580px) {
+  .div6 .second img {
+    width: 220px;
+  }
+
+  .div6 .text {
+    width: auto;
+  }
+  .shopAll {
+    padding: 10px 10px !important;
+  }
+  /* Shoe Detail */
+  .relatedShoes {
+    grid-template-columns: 1fr !important;
+  }
 }

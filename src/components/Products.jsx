@@ -62,7 +62,7 @@ const Products = (props) => {
 
       {/* All the shoes will be displayed here, but each shoe can be found in EachShoe component */}
       <div
-        className="d-grid col-md-4 gap-3 m-auto py-3"
+        className="shoecards d-grid col-md-4 gap-3 m-auto py-3"
         style={{
           width: "90%",
           gridTemplateColumns: "1fr 1fr 1fr 1fr",

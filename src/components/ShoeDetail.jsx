@@ -19,15 +19,20 @@ export const ProductDetail = () => {
     (product) => product.id !== Number(params.id)
   );
   return (
-    <div className="container">
+    <div className="m-2">
       <h3>Product Detail</h3>
 
       <div className="card mb-3">
-        <div className="row g-0">
-          <div className="col-md-4">
-            <img src={image} className="img-fluid rounded-start" alt={title} />
+        <div className="detailcard row align-items-center g-0">
+          <div className="detail1 col-lg-4">
+            <img
+              src={image}
+              className="img-fluid rounded-start"
+              width={"100%"}
+              alt={title}
+            />
           </div>
-          <div className="col-md-4">
+          <div className="detail1 col-lg-4">
             <div className="card-body">
               <h5 className="card-title">
                 <Link to={`/${id}`} className="text-decoration-none text-dark">
@@ -39,7 +44,7 @@ export const ProductDetail = () => {
               <div className="mb-4">
                 <h5>Sizes</h5>
                 <div
-                  className="d-grid"
+                  className="d-grid sizes"
                   style={{ width: "400px", gridTemplateColumns: "1fr 1fr 1fr" }}
                 >
                   <button className="p-2 m-2 rounded-pill sizebtn">
@@ -102,7 +107,7 @@ export const ProductDetail = () => {
                 <button
                   type="button"
                   className={
-                    "btn btn-outline-dark position-relative " +
+                    "btn btn-outline-none position-relative fs-3 " +
                     (favoriteId && "text-danger")
                   }
                   onClick={() => toggleFavorite(id)}
@@ -112,7 +117,7 @@ export const ProductDetail = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 d-flex justify-content-center align-items-center">
+          <div className="description col-lg-4 row d-flex justify-content-center align-items-center">
             <div className="p-4 m-5" style={{ background: "#F6f6f6" }}>
               <p>{detail}</p>
             </div>
@@ -122,11 +127,11 @@ export const ProductDetail = () => {
 
       <h3>Related Products</h3>
       <div
-        className="d-grid col-md-4 gap-3 m-auto py-3"
+        className="relatedShoes d-grid col-md-4 gap-3 m-auto py-3"
         style={{
           width: "100%",
           gridTemplateColumns: "1fr 1fr 1fr 1fr",
-          gridAutoRows: "400px",
+          gridAutoRows: "auto",
         }}
       >
         {relatedItems.map((product) => (

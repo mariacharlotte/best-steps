@@ -15,9 +15,9 @@ const Cart = () => {
         <h3>Your Cart Items</h3>
       </div>
 
-      <div className="w-100 cart-list d-flex gap-2">
+      <div className="w-100 cart-list d-lg-flex gap-2">
         <div
-          className="cart-item d-flex flex-wrap gap-2"
+          className="shoeincart cart-item d-flex flex-wrap gap-2"
           style={{ width: "70%", height: "370px" }}
         >
           {cartItems.map((item) => {
@@ -29,7 +29,7 @@ const Cart = () => {
           })}
         </div>
         <div
-          className="px-4 cart-info d-flex flex-column gap-2"
+          className="summarydiv px-4 cart-info d-flex flex-column gap-2"
           style={{ width: "30%" }}
         >
           <h3>Summary</h3>
