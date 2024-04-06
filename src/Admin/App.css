@@ -13,7 +13,7 @@ body {
   grid-template-columns: 0.7fr 3fr;
   grid-template-rows: 3fr;
   grid-template-areas: "sidebar main main main";
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 /*sidebar start*/
@@ -125,6 +125,7 @@ body {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 3fr;
     /* grid-template-areas: "sidebar" "main"; */
+    height: auto !important;
   }
   #sidebar {
     /* display: none; */
@@ -138,6 +139,9 @@ body {
 }
 /*Small<=768px*/
 @media screen and (max-width: 768px) {
+  .grid-container {
+    height: auto !important;
+  }
   .main-cards {
     grid-template-columns: 1fr;
     gap: 10px;

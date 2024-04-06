@@ -41,6 +41,9 @@ const Navbar = () => {
           <Link className="link py-3 px-5" to={"/contact"}>
             Contact
           </Link>
+          <Link className="link py-3 px-5" to={"/admin"}>
+            Admin
+          </Link>
         </ul>
 
         {navbarOpen ? (
