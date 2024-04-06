@@ -13,7 +13,7 @@ body {
   grid-template-columns: 0.7fr 3fr;
   grid-template-rows: 3fr;
   grid-template-areas: "sidebar main main main";
-  height: 100vh;
+  height: auto;
 }
 
 /*sidebar start*/
