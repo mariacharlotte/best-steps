@@ -186,6 +186,121 @@ const Home = () => {
           <p>Kids' Socks</p>
         </div>
       </div>
+
+      <div className="mt-4 p-4 bg-danger text-white d-flex align-items-center justify-content-center">
+        <h3>BECOME A MEMBER & ENJOY 15% DISCOUNT </h3>
+        <div className="flex flex-column justify-content-between position-relative p-2">
+          <div className="position-relative whiteBtndiv">
+            <button
+              className="whiteBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Sign Up
+            </button>
+            <div className="btnBorder"></div>
+          </div>
+
+          <div className="text-dark">
+            {/* <!-- Modal --> */}
+            <div
+              className="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h1 className="modal-title fs-5" id="exampleModalLabel">
+                      Sign Up Form
+                    </h1>
+                    <button
+                      type="button"
+                      className="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div className="modal-body">
+                    <form className="row g-3 p-3" style={{ width: "500px" }}>
+                      <div className="row my-3">
+                        <label className="mb-2" htmlFor="name">
+                          01. Name
+                        </label>
+                        <input
+                          id="name"
+                          type="text"
+                          style={{
+                            outline: "none",
+                            border: "none",
+                            borderBottom: "1px solid black",
+                            paddingBottom: "5px",
+                          }}
+                          placeholder="Enter Name Here"
+                        />
+                      </div>
+
+                      <div className="row my-3">
+                        <label className="mb-2" htmlFor="email">
+                          02. Email Address
+                        </label>
+                        <input
+                          id="email"
+                          type="text"
+                          style={{
+                            outline: "none",
+                            border: "none",
+                            borderBottom: "1px solid black",
+                            paddingBottom: "5px",
+                          }}
+                          placeholder="Enter Email Here"
+                        />
+                      </div>
+
+                      <div className="row my-3">
+                        <label className="mb-2" htmlFor="ph">
+                          03. Phone number
+                        </label>
+                        <input
+                          id="ph"
+                          type="text"
+                          style={{
+                            outline: "none",
+                            border: "none",
+                            borderBottom: "1px solid black",
+                            paddingBottom: "5px",
+                          }}
+                          placeholder="Enter Phone Number"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      className="w-25 py-2 submit bg-dark text-white"
+                      style={{ transition: "all 0.2s" }}
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+
+                    <button
+                      type="submit"
+                      className="w-25 py-2 submit"
+                      style={{ transition: "all 0.2s" }}
+                      data-bs-dismiss="modal"
+                    >
+                      SUBMIT
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

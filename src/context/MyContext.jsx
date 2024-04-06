@@ -66,7 +66,6 @@ const MyContext = (props) => {
   const getTotalAmount = () => {
     const totalAmount = cartItems.reduce((sum, item) => {
       const product = SHOES.find((product) => product.id === item.id);
-      console.log(product);
       if (item.count === 1) {
         sum += product.price;
       } else {

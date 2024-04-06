@@ -18,7 +18,7 @@ const Cart = () => {
       <div className="w-100 cart-list d-lg-flex gap-2">
         <div
           className="shoeincart cart-item d-flex flex-wrap gap-2"
-          style={{ width: "70%", height: "370px" }}
+          style={{ width: "70%" }}
         >
           {cartItems.map((item) => {
             const product = SHOES.find((shoe) => shoe.id === item.id);

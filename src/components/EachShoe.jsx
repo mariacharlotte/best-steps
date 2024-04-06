@@ -5,7 +5,11 @@ import { faHeart, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const EachShoe = ({ shoe }) => {
-  // Instead of writing shoe.id, shoe.image, we can shorten by putting them with spread operator
+  // const heartBtn = document.querySelectorAll("heartBtn");
+  // const shoeimg = document.querySelectorAll("shoeimg");
+  // shoeimg.addEventListener("click", () => {
+  //   heartBtn.classList.add("changecolor");
+  // });
   const { id, image, title, price } = shoe;
 
   const { cartItems, addToCart, toggleFavorite, favoriteIds } =
@@ -18,7 +22,7 @@ const EachShoe = ({ shoe }) => {
     <div className="products d-flex flex-column m-4">
       <div className="imgdiv position-relative">
         <img
-          className="shoeimg mb-2"
+          className="shoeimg mb-2 "
           src={image}
           alt="shoeImage"
           style={{ width: "100%" }}

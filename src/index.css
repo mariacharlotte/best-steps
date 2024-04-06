@@ -125,17 +125,13 @@ nav ul .link:hover,
 
 /* About Us */
 
-.container .div6 {
-  margin: 200px auto 0;
-}
-
 .div6 .first,
 .div6 .second {
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto 170px;
+  margin: 100px auto 100px;
   gap: 152px;
 }
 
@@ -217,6 +213,8 @@ nav ul .link:hover,
 /* Footer Component */
 
 .footerlinks:hover {
+  border: 1px solid grey;
+  border-radius: 5px;
   color: grey !important;
 }
 @media screen and (max-width: 1400px) {
@@ -355,6 +353,7 @@ nav ul .link:hover,
     font-size: 30px !important;
   }
   .footer2 {
+    padding: 0;
     display: grid !important;
     grid-template-columns: 1fr 1fr;
   }
@@ -397,5 +396,9 @@ nav ul .link:hover,
   /* Shoe Detail */
   .relatedShoes {
     grid-template-columns: 1fr !important;
+  }
+  .inputbox {
+    flex-direction: column;
+    gap: 20px;
   }
 }

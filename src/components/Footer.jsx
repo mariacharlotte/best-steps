@@ -9,7 +9,7 @@ const Footer = () => {
         style={{ width: "85%" }}
       >
         <div className="pt-3" style={{ width: "500px" }}>
-          <h1 className="fw-bold">Best Steps Offers a Suggestion</h1>
+          <h1 className="fw-bold">From our desk, to your inbox</h1>
           <p>
             Stay up to date with the latest shoes, fashion trends, and special
             offers by signing up for our newsletter
@@ -42,28 +42,28 @@ const Footer = () => {
           <div className="d-lg-row d-md-column">
             <ul className="footer2 d-flex justify-content-between align-items-center">
               <Link
-                className="ps-4 text-white footerlinks"
+                className="p-2 text-center text-white footerlinks"
                 style={{ textDecoration: "none" }}
                 to={"/"}
               >
                 Home
               </Link>
               <Link
-                className="ps-4 text-white footerlinks"
+                className="p-2 text-center text-white footerlinks"
                 style={{ textDecoration: "none" }}
                 to={"/products"}
               >
                 Products
               </Link>
               <Link
-                className="ps-4 text-white footerlinks"
+                className="p-2 text-center text-white footerlinks"
                 style={{ textDecoration: "none" }}
                 to={"/aboutus"}
               >
                 About Us
               </Link>
               <Link
-                className="ps-4 text-white footerlinks"
+                className="p-2 text-center text-white footerlinks"
                 style={{ textDecoration: "none" }}
                 to={"/contact"}
               >

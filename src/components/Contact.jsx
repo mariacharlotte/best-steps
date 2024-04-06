@@ -74,7 +74,7 @@ const Contact = () => {
                     borderBottom: "1px solid black",
                     paddingBottom: "5px",
                   }}
-                  placeholder="Enter Name Here"
+                  placeholder="Enter Phone Number"
                 />
               </div>
 
@@ -91,7 +91,7 @@ const Contact = () => {
                     borderBottom: "1px solid black",
                     paddingBottom: "5px",
                   }}
-                  placeholder="Enter Name Here"
+                  placeholder="Enter Shoe Type"
                 />
               </div>
 
@@ -125,17 +125,27 @@ const Contact = () => {
 
           <div style={{ width: "400px" }}>
             <p className="my-4 text-secondary">
-              At Xenon, we value your feedback and are here to help you with any
-              questions or concerns you may have. You can reach us through the
-              following methods:
+              At Best Steps, we value your feedback and are here to help you
+              with any questions or concerns you may have. You can reach us
+              through the following methods:
             </p>
             <div className="my-2 fw-bold">
               <FontAwesomeIcon className="me-2" icon={faPhone} />
-              <span>555-555-5555</span>
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="tel:555-555-5555"
+              >
+                555-555-5555
+              </a>
             </div>
             <div className="my-2 fw-bold">
               <FontAwesomeIcon className="me-2" icon={faEnvelope} />
-              <span>inquiry@beststeps.com</span>
+              <a
+                href="mailto:inquiry@beststeps.com"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                inquiry@beststeps.com
+              </a>
             </div>
             <div className="my-2 fw-bold">
               <FontAwesomeIcon className="me-2" icon={faUser} />

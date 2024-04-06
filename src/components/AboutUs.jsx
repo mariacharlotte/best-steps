@@ -24,6 +24,18 @@ const AboutUs = () => {
             </a>
           </div>
         </div>
+
+        <div className=" w-100 bg-dark text-white text-center p-3">
+          <h1>INNOVATION</h1>
+          <p>
+            Best Steps' shoes are designed with the latest technologies to
+            provide the best performance and comfort possible. Our shoes use
+            latest technologies that improves the shoe's durability,
+            breathability, and flexibility. We also use new technologies to
+            provide superior cushioning and support.
+          </p>
+        </div>
+
         <div className="second">
           <div className="img2">
             <img src={newshoe2} alt="" />
