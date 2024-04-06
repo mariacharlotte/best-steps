@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import homeshoe1 from "../assets/homeshoe.png";
 import homeshoe2 from "../assets/homeshoe2.png";
 import homeshoe3 from "../assets/homeshoe3.png";
@@ -8,10 +7,6 @@ import cover from "../assets/cover.jpg";
 import covershoe1 from "../assets/covershoe1.png";
 import covershoe2 from "../assets/covershoe2.png";
 import { useNavigate } from "react-router-dom";
-=======
-import shoe1 from "../assets/homeshoe.png";
-import Navbar from "../components/Navbar";
->>>>>>> 2aec4a7 (admin added)
 
 const Home = () => {
   const navigate = useNavigate();

@@ -13,15 +13,12 @@ import Cart from "./cart/Cart";
 import Favorite from "./favorite/Favorite";
 import Footer from "./components/Footer";
 
-<<<<<<< HEAD
 import { ProductDetail } from "./components/ShoeDetail";
 
-=======
 import React, { useState } from "react";
 import Sales from "./Admin/Sales";
 import Customers from "./Admin/Customers";
 import Dashboard from "./Admin/Dashboard";
->>>>>>> 2aec4a7 (admin added)
 function App() {
   return (
     <div className="bg">
@@ -35,9 +32,6 @@ function App() {
             <Route path="/:id" element={<ProductDetail />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-<<<<<<< HEAD
-            <Route path="/admin" element={<Admin />} />
-=======
 
             <Route path="/admin" element={<Admin />}>
               <Route path="Dashboard" element={<Dashboard />} />
@@ -45,7 +39,6 @@ function App() {
               <Route path="Customers" element={<Customers />} />
             </Route>
 
->>>>>>> 2aec4a7 (admin added)
             <Route path="/cart" element={<Cart />} />
             <Route path="/fav" element={<Favorite />} />
           </Routes>

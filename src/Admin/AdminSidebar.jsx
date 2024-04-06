@@ -6,7 +6,7 @@ import {
   BsPeopleFill,
   BsCurrencyDollar,
 } from "react-icons/bs";
-import{Link }from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ openSidebarToggle }) => {
   return (
@@ -14,26 +14,26 @@ const Sidebar = ({ openSidebarToggle }) => {
       id="sidebar"
       className={openSidebarToggle ? "sidebar-responsive" : ""}
     >
-      
       <ul className="siderbar-lists">
-        <li className="sidebar-list-items">
-          <Link to="/admin/dashboard">
+        <Link to="/admin/dashboard" style={{ textDecoration: "none" }}>
+          <li className="sidebar-list-items text-black">
             <BsGrid1X2Fill className="icon me-1" />
             Dashboard
-          </Link>
-        </li>
-        <li className="sidebar-list-items">
-          <Link to="/admin/Sales">
+          </li>
+        </Link>
+
+        <Link to="/admin/Sales" style={{ textDecoration: "none" }}>
+          <li className="sidebar-list-items text-black">
             <BsCurrencyDollar className="icon me-1" />
             Sales
-          </Link>
-        </li>
-        <li className="sidebar-list-items">
-          <Link to="/admin/Customers">
+          </li>
+        </Link>
+        <Link to="/admin/Customers" style={{ textDecoration: "none" }}>
+          <li className="sidebar-list-items text-black">
             <BsPeopleFill className="icon me-1" />
             Customers
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </aside>
   );

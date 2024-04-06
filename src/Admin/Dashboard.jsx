@@ -66,32 +66,32 @@ const Dashboard = () => {
   ];
   return (
     <main className=" main-container">
-      <div className="main=title">
+      {/* <div className="main=title">
         <h3>Dashboard</h3>
-      </div>
+      </div> */}
       <div className="main-cards">
-        <div className="card">
+        <div className="admincard">
           <div className="card-inner">
             <h3>Sales</h3>
             <BsCurrencyDollar className="card-icon" />
           </div>
           <h1>20,300</h1>
         </div>
-        <div className="card">
+        <div className="admincard">
           <div className="card-inner">
             <h3>Profits</h3>
             <BsBarChartFill className="card-icon" />
           </div>
           <h1>50%</h1>
         </div>
-        <div className="card">
+        <div className="admincard">
           <div className="card-inner">
             <h3>Customers</h3>
             <BsPeopleFill className="card-icon" />
           </div>
           <h1>25,300</h1>
         </div>
-        <div className="card">
+        <div className="admincard">
           <div className="card-inner">
             <h3>Inventory</h3>
             <BsFillArchiveFill className="card-icon" />

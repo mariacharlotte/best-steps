@@ -8,7 +8,7 @@ const MyContext = (props) => {
   const [favoriteIds, setFavoriteIds] = useState([]);
 
   useEffect(() => {
-    console.log(cartItems, favoriteIds);
+    // console.log(cartItems, favoriteIds);
   }, [cartItems, favoriteIds]);
 
   //   add to cart function

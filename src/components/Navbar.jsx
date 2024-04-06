@@ -28,7 +28,7 @@ const Navbar = () => {
           Best Steps &nbsp;
           <img src={logo} style={{ width: "35px", height: "35px" }} alt="" />
         </span>
-        <ul className="navUl d-flex">
+        <ul className="navUl">
           <Link className="link py-3 px-5" to={"/"}>
             Home
           </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div
           id="uldiv"
           className={
-            "z-1 togglelinks position-absolute bg-white " +
+            "z-3 togglelinks position-absolute bg-white " +
             (navbarOpen && "d-block")
           }
           style={{ height: "400px", width: "100%" }}
