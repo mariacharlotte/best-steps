@@ -66,6 +66,7 @@ nav ul .link:hover,
 .btnHide {
   display: none;
 }
+<<<<<<< HEAD
 .changecolor {
   color: red;
 }
@@ -401,4 +402,10 @@ nav ul .link:hover,
     flex-direction: column;
     gap: 20px;
   }
+=======
+/*About US*/
+.link{
+  text-decoration: none;
+  color: black;
+>>>>>>> 2aec4a7 (admin added)
 }
