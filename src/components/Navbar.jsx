@@ -101,6 +101,13 @@ const Navbar = () => {
             >
               Contact
             </Link>
+            <Link
+              className="d-block link py-3 px-5"
+              to={"/admin"}
+              onClick={() => setNavbarOpen((prev) => !prev)}
+            >
+              Admin
+            </Link>
           </ul>
         </div>
       )}
